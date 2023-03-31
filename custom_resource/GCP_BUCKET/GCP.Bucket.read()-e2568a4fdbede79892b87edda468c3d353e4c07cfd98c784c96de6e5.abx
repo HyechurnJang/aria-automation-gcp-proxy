@@ -1,0 +1,12 @@
+---
+exportVersion: "1"
+exportId: "8a7580f8865fcd630187354a5fcf051a"
+name: "GCP.Bucket.read()"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  gcpProxyUrl: "http://172.16.0.1:8080"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+memoryInMB: 300
