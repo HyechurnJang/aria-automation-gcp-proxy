@@ -1,0 +1,19 @@
+formatVersion: 1
+inputs:
+  name:
+    type: string
+    title: Bucket Name
+  gcpProjectName:
+    type: string
+    title: GCP Project Name
+resources:
+  bucket:
+    type: Custom.GCP.Bucket
+    metadata:
+      layoutPosition:
+        - 0
+        - 0
+    properties:
+      name: ${input.name}
+      gcpSecretName: ${env.requestedBy}
+      gcpProjectName: ${input.gcpProjectName}
